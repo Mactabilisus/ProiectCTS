@@ -16,5 +16,46 @@ public class HeroTests {
 			ex.printStackTrace();
 		}
 	}
+	
+	@Test
+	public void testRankHero() {
+		try{
+			new Hero().setRank(4);
+		}catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testNumeHero() {
+		try{
+			new Hero().setHeroName("Storm");
+		}catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testKDAHero() {
+		try{
+			new Hero().setKDA(5.6);
+		}catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
+	
+	@Test
+	public void testMatchesHero()
+	{
+		try{
+			new Hero().setMatchesPlayed(15);
+		}catch (Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
 
 }

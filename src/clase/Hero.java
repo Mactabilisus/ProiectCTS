@@ -4,11 +4,11 @@ public class Hero {
 	private String heroName;
 	private int rank;
 	private int matchesPlayed;
-	private int KDA;
+	private double KDA;
 	
 	public static Hero instanta;
 
-	public Hero(String heroName2, int rank2, int matchesPlayed2, int kDA2) {
+	public Hero(String heroName2, int rank2, int matchesPlayed2, double kDA2) {
 		super();
 		this.heroName = heroName2;
 		this.rank = rank2;
@@ -43,10 +43,10 @@ public class Hero {
 	public void setMatchesPlayed(int matchesPlayed) {
 		this.matchesPlayed = matchesPlayed;
 	}
-	public int getKDA() {
+	public double getKDA() {
 		return KDA;
 	}
-	public void setKDA(int kDA) {
-		KDA = kDA;
+	public void setKDA(double d) {
+		KDA = d;
 	}
 }
