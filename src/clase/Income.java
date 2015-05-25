@@ -12,13 +12,42 @@ public class Income {
 		if (nume != null && !nume.matches("[0-9]+")){
 			this.nume = nume;
 		}
+		else
+		{
+			System.out.println("Numele este introdus gresit in income");
+		}
 	}
-	public Income(String nume, int goldPeMinut, int killsGold, int deathPenalty) {
+	public Income(String _nume, int _goldPeMinut, int _killsGold, int _deathPenalty) {
 		super();
-		this.nume = nume;
-		this.goldPeMinut = goldPeMinut;
-		this.killsGold = killsGold;
-		this.deathPenalty = deathPenalty;
+		if (_nume != null && !_nume.matches("[0-9]+")){
+			this.nume = _nume;
+		}
+		else
+		{
+			System.out.println("Numele este introdus gresit in income");
+		}
+		if(_goldPeMinut < 0){
+			System.out.println("Goldul pe minut nu poate fi mai mic decat 0");
+		}
+		else
+		{
+			this.goldPeMinut = _goldPeMinut;
+		}
+		if(_killsGold < 0){
+			System.out.println("Goldul pe killuri nu poate fi mai mic decat 0");
+		}
+		else
+		{
+		this.killsGold = _killsGold;
+		}
+		if(_deathPenalty < 0){
+			System.out.println("Death penalty-ul nu poate fi mai mic decat 0");
+		}
+		else
+		{
+			this.deathPenalty = _deathPenalty;
+		}
+		
 	}
 	
 	public Income()
@@ -28,20 +57,38 @@ public class Income {
 	public int getGoldPeMinut() {
 		return goldPeMinut;
 	}
-	public void setGoldPeMinut(int goldPeMinut) {
-		this.goldPeMinut = goldPeMinut;
+	public void setGoldPeMinut(int _goldPeMinut) {
+		if(_goldPeMinut < 0){
+			System.out.println("Goldul pe minut nu poate fi mai mic decat 0");
+		}
+		else
+		{
+			this.goldPeMinut = _goldPeMinut;
+		}
 	}
 	public int getKillsGold() {
 		return killsGold;
 	}
-	public void setKillsGold(int killsGold) {
-		this.killsGold = killsGold;
+	public void setKillsGold(int _killsGold) {
+		if(_killsGold < 0){
+			System.out.println("Goldul pe killuri nu poate fi mai mic decat 0");
+		}
+		else
+		{
+		this.killsGold = _killsGold;
+		}
 	}
 	public int getDeathPenalty() {
 		return deathPenalty;
 	}
-	public void setDeathPenalty(int deathPenalty) {
-		this.deathPenalty = deathPenalty;
+	public void setDeathPenalty(int _deathPenalty) {
+		if(_deathPenalty < 0){
+			System.out.println("Death penalty-ul nu poate fi mai mic decat 0");
+		}
+		else
+		{
+			this.deathPenalty = _deathPenalty;
+		}
 	}
 	
 	public int GoldSoFar(int minut)

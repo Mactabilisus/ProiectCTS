@@ -20,7 +20,7 @@ public class HeroTests {
 	@Test
 	public void testRankHero() {
 		try{
-			new Hero().setRank(4);
+			new Hero().setRank(40);
 		}catch (Exception ex)
 		{
 			ex.printStackTrace();
@@ -40,7 +40,7 @@ public class HeroTests {
 	@Test
 	public void testKDAHero() {
 		try{
-			new Hero().setKDA(5.6);
+			new Hero().setKDA(8.9);
 		}catch (Exception ex)
 		{
 			ex.printStackTrace();
@@ -51,7 +51,7 @@ public class HeroTests {
 	public void testMatchesHero()
 	{
 		try{
-			new Hero().setMatchesPlayed(15);
+			new Hero().setMatchesPlayed(20);
 		}catch (Exception ex)
 		{
 			ex.printStackTrace();

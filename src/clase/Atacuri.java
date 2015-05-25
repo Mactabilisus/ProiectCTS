@@ -24,7 +24,12 @@ public class Atacuri implements Subiect {
 	
 	public Atacuri(int nrAtacuri) {
 		super();
-		this.nrAtacuri = nrAtacuri;
+		if(nrAtacuri < 0)
+		{
+			System.out.println("Numarul de atacuri nu poate fi mai mic decat 0");
+		}
+		else
+			this.nrAtacuri = nrAtacuri;
 	}
 
 	public void adaugaObserver(Observer o) {

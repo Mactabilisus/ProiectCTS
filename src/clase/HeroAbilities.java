@@ -25,6 +25,12 @@ public class HeroAbilities implements DecoratorAbilities {
 	}
 
 	public void setDenumire(String denumire) {
-		this.denumire = denumire;
+		if (denumire != null && !denumire.matches("[0-9]+")){
+			this.denumire = denumire;
+		}
+		else
+		{
+			System.out.println("Denumirea nu este buna in HeroAbility");
+		}
 	}
 }

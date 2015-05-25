@@ -27,13 +27,27 @@ public abstract class OtherAbilities {
 		return Qability;
 	}
 	public void setQability(String qability) {
-		Qability = qability;
+		if (qability != null && !qability.matches("[0-9]+"))
+		{
+			System.out.println("QAbility name wrong");
+		}
+		else
+		{
+			Qability = qability;
+		}
 	}
 	public String getWability() {
 		return Wability;
 	}
 	public void setWability(String wability) {
-		Wability = wability;
+		if (wability != null && !wability.matches("[0-9]+"))
+		{
+			System.out.println("wability name wrong");
+		}
+		else
+		{
+			Qability = wability;
+		}
 	}
 
 }
