@@ -14,6 +14,9 @@ public class Erou implements Observer {
 			System.out.println("Numele este gresit in Erou");
 		}
 	}
+	public Erou() {
+		// TODO Auto-generated constructor stub
+	}
 	public void update(String mesaj) {
 		System.out.println(nume+" ai un mesaj: "+mesaj);
 	}

@@ -8,6 +8,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
+import junit.framework.TestCase;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -17,7 +19,7 @@ import org.junit.Test;
 import clase.Item;
 import clase.OtherAbilities;
 
-public class ItemFileTesting {
+public class ItemFileTesting{
 	public static File file;
 	public static BufferedReader reader;
 	
