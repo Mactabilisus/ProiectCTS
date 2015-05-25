@@ -65,5 +65,22 @@ public class IncomeTests {
 		}
 	}
 	
-
+	@Test
+	public void testGoldSoFar()
+	{
+		Income inc = new Income();
+		//int gold = inc.getGoldPeMinut();
+		int gold =  inc.GoldSoFar(40);
+		int expected = inc.getGoldPeMinut() * 40;
+		assertEquals(expected, gold);
+	}
+	
+	@Test
+	public void testGoldAfterKill()
+	{
+		Income inc = new Income();
+		int gold = inc.getKillsGold();
+		int expected = inc.GoldAfterKill(5);
+		assertEquals(expected, 5*gold);
+	}
 }

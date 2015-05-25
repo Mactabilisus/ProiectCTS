@@ -13,6 +13,9 @@ public abstract class OtherAbilities {
 	public OtherAbilities(DecoratorAbilities _abilities) {
 		abilities = _abilities;
 	}
+	public OtherAbilities() {
+		// TODO Auto-generated constructor stub
+	}
 	public void QAbility(String string){
 		abilities.QAbility();
 		

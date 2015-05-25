@@ -1,0 +1,3 @@
+Octarine;5700
+Tarasque;1900
+Mjollnir;4000
