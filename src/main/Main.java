@@ -85,8 +85,8 @@ public class Main {
 		inc.setDeathPenalty(120);
 		inc.setKillsGold(300);
 		int sfarsit = inc.GoldSoFar(45) + inc.getKillsGold() - inc.getDeathPenalty();
-		inc.setNume("Storm");
-		System.out.println("La sfarsitul jocului de 45 de minute dupa 10 killuri si 4 deaths ai avut urmatorul income de :"+sfarsit);
+		inc.setNume("Storm Spirit");
+		System.out.println("La sfarsitul jocului cu eroul :"+inc.getNume()+" de 45 de minute dupa 10 killuri si 4 deaths ai avut urmatorul income de :"+sfarsit);
 	}
 
 }

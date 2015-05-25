@@ -9,7 +9,7 @@ import clase.Hero;
 public class HeroTests {
 
 	@Test
-	public void testConstructorParams() {
+	public void testParametri() {
 		try{
 			Hero hero = new Hero("Storm",1,30,30);
 		}catch(Exception ex){

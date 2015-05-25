@@ -9,7 +9,21 @@ public class Income {
 		return nume;
 	}
 	public void setNume(String nume) {
+		if (nume != null && !nume.matches("[0-9]+")){
+			this.nume = nume;
+		}
+	}
+	public Income(String nume, int goldPeMinut, int killsGold, int deathPenalty) {
+		super();
 		this.nume = nume;
+		this.goldPeMinut = goldPeMinut;
+		this.killsGold = killsGold;
+		this.deathPenalty = deathPenalty;
+	}
+	
+	public Income()
+	{
+		super();
 	}
 	public int getGoldPeMinut() {
 		return goldPeMinut;

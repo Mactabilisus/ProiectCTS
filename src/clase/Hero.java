@@ -29,7 +29,9 @@ public class Hero {
 		return heroName;
 	}
 	public void setHeroName(String heroName) {
-		this.heroName = heroName;
+		if (heroName != null && !heroName.matches("[0-9]+")){
+			this.heroName = heroName;
+		}
 	}
 	public int getRank() {
 		return rank;

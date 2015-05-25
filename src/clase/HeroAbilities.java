@@ -6,9 +6,10 @@ public class HeroAbilities implements DecoratorAbilities {
 
 	private String denumire; 
 	public HeroAbilities(String _denumire) {
-		denumire=_denumire;
+		if (_denumire != null && !_denumire.matches("[0-9]+")){
+			this.denumire = _denumire;
+		}
 	}
-
 	public void QAbility() {
 		System.out.println(denumire + " has the following Q Ability");
 

@@ -6,10 +6,12 @@ public class Recipe extends Shop{
 		private ArrayList<Shop> items = new ArrayList<Shop>();
 		private String recipeName;
 		
-		public Recipe(String recipeName) {
-			super();
-			this.recipeName = recipeName;
+		public Recipe(String recipeName){
+			if (recipeName != null && !recipeName.matches("[0-9]+")){
+				this.recipeName = recipeName;
+			}
 		}
+
 		
 		public void add(Shop shop)
 		{
