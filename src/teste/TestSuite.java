@@ -6,7 +6,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({ HeroTests.class , IncomeTests.class , ItemTests.class , ItemFileTesting.class , IncomeMockito.class,
-				OtherAbilitiesMockito.class})
+				OtherAbilitiesMockito.class , HeroFileTesting.class , IncomeFileTesting.class })
 public class TestSuite {
 
 }

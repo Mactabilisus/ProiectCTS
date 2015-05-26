@@ -1,0 +1,2 @@
+WitchDoctor;20;9.7;2
+Clinkz;46;1.5;3
